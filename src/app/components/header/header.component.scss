@@ -1,0 +1,17 @@
+@use 'src/assets/samurai-sass/sass/samurai-sass';
+
+.header {
+    height: 4rem;
+
+    &-navigator {
+
+        &_link {
+            transition: 0.1s ease-in-out;
+            @extend 
+            .flex,
+            .flex-1,
+            .jc-center,
+            .ai-center;
+        }
+    }
+}

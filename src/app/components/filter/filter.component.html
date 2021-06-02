@@ -1,0 +1,40 @@
+<div class="filter flex grey">
+    <div class="filter-date flex flex-1 jc-center ai-center gap-1">
+        <form class="flex gap-1">
+
+            <span class="as-center fw600">от</span>
+            <input 
+            [(ngModel)] ="filterData.dateFrom" 
+            class="text-center" 
+            type="date" 
+            name="dateFrom">
+
+            <span class="as-center fw600">до</span>
+            <input 
+            [(ngModel)] ="filterData.dateTo" 
+            class="text-center" 
+            type="date" 
+            name="dateTo">
+
+        </form>
+        
+        <button 
+        (click)='dataFilterResult()'
+        class="btn success text-light fw600 success-hover">Отсортировать</button>
+        <button 
+        (click)='clearDataFilter()'
+        class="btn danger text-light fw600 danger-hover">Очистить</button>
+
+        <input 
+        [(ngModel)]='filterData.search'
+        class="text-center" 
+        type="text" 
+        name="search"
+        placeholder="Поиск по имени">
+
+        <button 
+        (click)='dataSearch()'
+        class="btn success text-light fw600 success-hover">Поиск</button>
+
+    </div>
+</div>

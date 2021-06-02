@@ -1,0 +1,35 @@
+<div class="container light">
+    <div class="table-wrapper flex">
+        <div class="table-head-fixed light">
+            <div class="row grey flex fw600">
+                <div class="cell">№</div>
+                <div class="cell">Имя</div>
+                <div class="cell">Дата</div>
+            </div>
+            <div 
+            *ngFor='let item of data; let i = index' 
+            class="table-body flex">
+                <div class="cell">{{i+1}}</div>
+                <div class="cell">{{item.name}}</div>
+                <div class="cell">{{item.date}}</div>
+            </div>
+        </div>
+        <div class="table-head light">
+            <div class="row grey flex fw600">
+                <div class="cell">Возраст</div>
+                <div class="cell">Город</div>
+                <div class="cell">Должность</div>
+                <div class="cell">Технология</div>
+            </div>
+            <div 
+            *ngFor='let item of data; let i = index' 
+            class="table-body flex">
+                <div class="cell">{{item.age}}</div>
+                <div class="cell">{{item.city}}</div>
+                <div class="cell">{{item.position}}</div>
+                <div class="cell">{{item.tech}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+

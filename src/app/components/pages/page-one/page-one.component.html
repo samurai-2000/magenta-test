@@ -1,0 +1,13 @@
+<mg-filter 
+[data]='array'
+[state]='statePageOne'
+(onSearch)='getFilterData($event)'
+(onClear)='clearFilterData()'
+(onFilter)='getFilterData($event)'>
+</mg-filter>
+
+<h1 class="text-center fz1_25">от {{statePageOne.dateFrom}} до {{statePageOne.dateTo}}</h1>
+
+<mg-table 
+[data]='array'>
+</mg-table>
