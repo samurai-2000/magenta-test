@@ -1,0 +1,18 @@
+//=
+//+     import with variables
+//=
+@import 'modification';
+//=
+//+     Utilities for fast layout
+//=
+//=
+//+     class generator with input parameter map
+//=
+@mixin classes_generator($map) {
+    @each $property, $value in $map {
+        @each $key, $values in $value {
+            .#{$key} {#{$property}: $values;}
+        }
+    }
+}
+@include classes_generator($base-map);

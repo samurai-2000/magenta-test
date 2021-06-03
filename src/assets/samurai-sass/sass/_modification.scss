@@ -1,0 +1,152 @@
+//=
+//+     Variables
+//=
+$base-map: (
+//=
+//+     property "display"
+//=
+    display: (
+        "flex": flex,
+        'block': block,
+        'inline': inline,
+        'inline-block': inline-block
+    ),
+//=
+//+     property "flex-flow"
+//=
+    flex-flow: (
+        'reverse': row-reverse,
+        'column': column,
+        'rev-column': column-reverse,
+        'wrap': wrap,
+        'rev-wrap': wrap-reverse,
+    ),
+//=
+//+     property "justify-content"
+//=
+    justify-content: (
+        'jc-start': flex-start,
+        'jc-center': center,
+        'jc-end': flex-end,
+        'jc-between': space-between,
+        'jc-around': space-around,
+        'jc-evenly': space-evenly,
+    ),
+//=
+//+     property "align-items"
+//=
+    align-items: (
+        'ai-start': flex-start,
+        'ai-center': center,
+        'ai-end': flex-end,
+    ),
+//=
+//+     property "align-self"
+//=
+    align-self:(
+        'as-start': flex-start,
+        'as-center': center,
+        'as-end': flex-end,
+    ),
+//=
+//+     property "text-align"
+//=
+    text-align: (
+        'text-left': left,
+        'text-center': center,
+        'text-right': right,
+    ),
+//=
+//+     property "flex"
+//=
+    flex: (
+        'flex-1': 1,
+        'flex-2': 2,
+        'flex-3': 3,
+        'flex-4': 4,
+        'flex-5': 5,
+        'flex-6': 6,
+        'flex-7': 7,
+        'flex-8': 8,
+        'flex-9': 9,
+        'flex-10': 10,
+        'flex-11': 11,
+        'flex-12': 12,
+        'flex-25': 25%,
+        'flex-33': 33.333%,
+        'flex-50': 50%,
+        'flex-75': 75%,
+        'flex-100': 100%,
+        'flex-auto': auto,
+    ),
+//=
+//+     property "gap"
+//=
+    gap: (
+        'gap-01': 0.1rem,
+        'gap-05': 0.5rem,
+        'gap-1': 1rem,
+        'gap-2': 2rem,
+    ),
+//=
+//+     property "order"
+//=
+    order: (
+        'order-1': 1,
+        'order-2': 2,
+        'order-3': 3,
+        'order-4': 4,
+        'order-5': 5,
+        'order-6': 6,
+        'order-7': 7,
+        'order-8': 8,
+        'order-9': 9,
+        'order-10': 10,
+        'order-11': 11,
+        'order-12': 12,
+    ),
+//=
+//+     property "font-size"
+//=
+    font-size: (
+        'fz0_1': 0.1rem,
+        'fz0_25': 0.25rem,
+        'fz0_5': 0.5rem,
+        'fz1': 1rem,
+        'fz1_25': 1.25rem,
+        'fz1_5': 1.5rem,
+        'fz2': 2rem,
+        'fz2_25': 2.25rem,
+        'fz2_5': 2.5rem,
+        'fz3': 3rem,
+        'fz3_25': 3.25rem,
+        'fz3_5': 3.5rem,
+        'fz4': 4rem,
+        'fz4_25': 4.25rem,
+        'fz4_5': 4.5rem,
+        'fz5': 5rem,
+        'fz5_25': 5.25rem,
+        'fz5_5': 5.5rem,
+    ),
+//=
+//+     property "font-weight"
+//=
+    font-weight: (
+        'fw100': 100,
+        'fw200': 200,
+        'fw300': 300,
+        'fw400': 400,
+        'fw500': 500,
+        'fw600': 600,
+        'fw700': 700,
+        'fw800': 800,
+        'fw900': 900,
+    ),
+//=
+//+     property "font-style"
+//=
+    font-style: (
+        'fs-normal': normal,
+        'fs-italic': italic
+    )
+);

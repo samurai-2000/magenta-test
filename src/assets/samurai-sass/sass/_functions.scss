@@ -1,0 +1,75 @@
+//=
+//+     Color functions
+//=
+//=
+//+     creating a set of classes with a basic color palette
+//=
+@mixin color-palette($map) {
+    @each $key, $value in $map {
+        @each $name, $colors in $value {
+            @if($key == 'base') {
+                .#{$name} {background-color: $colors;}
+            }
+            @if($key == 'hover') {
+                .#{$name}-hover:hover {background-color: $colors;}
+            }
+            @if($key == 'focus') {
+                .#{$name}-focus:focus {background-color: $colors;}
+            }
+            @if($key == 'active') {
+                .#{$name}-active:active {background-color: $colors;}
+            }
+            @if($key == 'font') {
+                .text-#{$name} {color: $colors;}
+            }
+            @if($key == 'font-hover') {
+                .text-#{$name}-hover:hover {color: $colors;}
+            }
+            @if($key == 'font-focus') {
+                .text-#{$name}-focus:focus {color: $colors;}
+            }
+            @if($key == 'font-active') {
+                .text-#{$name}-active:active {color: $colors;}
+            }
+        }
+    }
+}
+//=
+//+     changing the brightness of the color depending on the input parameters
+//=
+@function Bright($color, $amount: 0) {
+    @if($amount == 0) {
+        @return $color;
+    }
+    @if($amount > 0) {
+        @return lighten($color: $color, $amount: $amount);
+    }
+    @if($amount < 0) {
+        @return darken($color: $color, $amount: $amount * -1);
+    }
+}
+//=
+//+     change color saturation depending on input parameters
+//= 
+@function Saturation($color, $amount: 0) {
+    @if($amount == 0) {
+        @return $color;
+    }
+    @if($amount > 0) {
+        @return saturate($color: $color, $amount: $amount);
+    }
+    @if($amount < 0) {
+        @return desaturate($color: $color, $amount: $amount * -1); 
+    }
+}
+//=
+//+     changing the transparency of the color depending on the input parameters
+//= 
+@function TT($color, $amount: 0) {
+    @if($amount == 0) {
+        @return $color;
+    }
+    @else {
+        @return transparentize($color: $color, $amount: 1 - $amount);
+    }
+}
